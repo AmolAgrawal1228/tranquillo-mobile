@@ -106,12 +106,9 @@ const Stack = createNativeStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{headerShown:false}}>
         <Stack.Screen name="Tranquillo" component={HomeScreen} />
-        <Stack.Screen
-          name="Questionairre"
-          component={PersonalizedPlanQScreen}
-        />
+        <Stack.Screen name="Questionairre" component={PersonalizedPlanQScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
