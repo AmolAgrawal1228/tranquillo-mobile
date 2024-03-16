@@ -14,9 +14,10 @@ function Shop({ navigation }) {
 
   return (
     <ImageBackground source = {shopBackground} resizeMode = 'cover' style = {{flex:1}}>
-      <View style = {{flex:10}}>
-        <Text style = {{color: '#000',textAlign: 'center',verticalAlign: 'bottom',fontSize: 50, fontFamily: 'GillSans-SemiBoldItalic', padding:20}}>Shop</Text>
+      <View style = {{flex:8, justifyContent: 'flex-end'}}>
+        <Text style = {styles.title}>Shop</Text>
       </View>
+      <View style = {{flex:2}}/>
       <View style = {{flex:19,flexDirection: 'row'}}>
         <View style = {{flex:1}}>
           <TouchableOpacity style = {styles.shopItem}>
@@ -45,28 +46,7 @@ function Shop({ navigation }) {
           </TouchableOpacity>
         </View>
       </View>
-      <View style = {{flex:7, flexDirection: 'row'}}>
-        <View style = {{flex:1}}>
-          <TouchableOpacity style = {styles.pageSlider}>
-            <Text style = {styles.pageSliderText}>Settings</Text>
-          </TouchableOpacity>
-        </View>
-        <View style = {{flex:1}}>
-          <TouchableOpacity style = {styles.pageSlider}>
-            <Text style = {styles.pageSliderText}>Progress</Text>
-          </TouchableOpacity>
-        </View>
-        <View style = {{flex:1}}>
-          <TouchableOpacity style = {styles.pageSlider}>
-            <Text style = {styles.pageSliderText}>Your Plan</Text>
-          </TouchableOpacity>
-        </View>
-        <View style = {{flex:1}}>
-          <TouchableOpacity style = {styles.pageSlider}>
-            <Text style = {styles.pageSliderText}>Shop</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
+      <View style = {{flex:7, flexDirection: 'row'}}/>
     </ImageBackground>
   );
 }
@@ -75,7 +55,7 @@ const styles = StyleSheet.create({
   title: {
     color: '#000',
     textAlign: 'center',
-    verticalAlign: 'bottom',
+    justifyContent: 'flex-end',
     fontSize: 50, 
     fontFamily: 'GillSans-SemiBoldItalic'
   },
