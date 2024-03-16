@@ -1,17 +1,17 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import PersonalizedPlanQScreen from "./screens/Plan";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
+import Shop from "./screens/shop";
 import HomeScreen from "./screens/HomeScreen";
 
-const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown:false}}>
-        <Stack.Screen name="Tranquillo" component={HomeScreen} />
-        <Stack.Screen name="Questionairre" component={PersonalizedPlanQScreen} />
-      </Stack.Navigator>
+      <Tab.Navigator screenOptions={{headerShown:false}} initialRouteName="HomeScreen">
+        <Tab.Screen name="Tranquillo" component={HomeScreen}/>
+        <Tab.Screen name="Shop" component={Shop}/>
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }

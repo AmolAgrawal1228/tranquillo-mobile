@@ -138,7 +138,7 @@ function HomeScreen({ navigation }) {
         <Text>
           {
             "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-          }
+          } 
         </Text>
       </View>
     </ImageBackground>
