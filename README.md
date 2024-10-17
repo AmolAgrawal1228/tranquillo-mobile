@@ -15,4 +15,4 @@ HOW TO MAKE YOUR OWN BRANCH (commands in order)
 6. `git commit -m <commit-message>`
 7. `git push origin <branch-name>`
 
-Thank you!
+Thank you so much!
